@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a5ee919a-7e83-4bda-9866-b7292d22b1d8" name="himprice" url="http://chimprice.nwdev.net:82">
+        <fileTransfer host="chimprice.nwdev.net" port="21" username="c11_chimprice">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

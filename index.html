@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Хим Прайс</title>
+    <meta name="keywords" content="Челябинск, Хим Прайс, Бытовая химия, Опотовая и розничная продажа, Белизна, Стерлитамак, Каустическая сода, Набережные челны, Мешок, Стиральные порошки, Эколь, Чистящие средства, Зифа, Луч, Миф, Флора, Агафья, Бабушка агафья, рецепты бабушки агафьи, Первое решение, Прогресс, Хозяйственное мыло, Черное мыло, Чистая линия, ЕЖК мыло">
+    <meta name="description" content="Челябинск, Хим Прайс, Бытовая химия, Опотовая и розничная продажа, Белизна, Стерлитамак, Каустическая сода, Набережные челны, Мешок, Стиральные порошки, Эколь, Чистящие средства, Зифа, Луч, Миф, Флора, Агафья, Бабушка агафья, рецепты бабушки агафьи, Первое решение, Прогресс, Хозяйственное мыло, Черное мыло, Чистая линия, ЕЖК мыло">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+   <!--script for slider-->
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 5000,
+                dots: true,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 3],
+                loop:true,
+                nav: true,
+                responsive:{
+                    0: {
+                        items: 1
+                    }
+                }
+            });
+        });
+
+
+    </script>
+
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+                myPlacemark;
+
+        function init(){
+            myMap = new ymaps.Map("map", {
+                center: [55.102817, 61.376745],
+                zoom: 13,
+                controls: []
+            });
+
+            myPlacemark = new ymaps.Placemark(
+                    [55.102829, 61.376745],
+                    {},
+                    {
+                        iconLayout: 'default#image',
+                        // Своё изображение иконки метки.
+//                        iconImageHref: 'img/location-sign.png', // картинка иконки
+                        iconImageSize: [40, 50], // размер иконки
+
+                    }
+            );
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+
+        $(document).ready(function() {
+            $(".wrap_menu").on("click", "a", function (event) {
+
+                event.preventDefault();
+
+                var id = $(this).attr('href'),
+
+                        top = $(id).offset().top;
+
+                //анимируем переход на расстояние - top за 1500 мс
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+
+            $(".fixed_btn").on("click", "a", function (event) {
+
+                event.preventDefault();
+
+                var id = $(this).attr('href'),
+
+                        top = $(id).offset().top;
+
+                //анимируем переход на расстояние - top за 1500 мс
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+
+<header>
+    <div class="fixed_menu">
+    <div class="wrapper">
+        <div class="wrap clearfix">
+            <div class="wrap_block clearfix">
+                <div class="wrap_adress clearfix">
+                    <div class="time_work">
+                        <span>
+                            ПН- ПТ:  09-17
+                        </span>
+                        <span>
+                            СБ: 09-15
+                        </span>
+                    </div>
+                    <p>АДРЕС: 1-АЯ ПОТРЕБИТЕЛЬСКАЯ 7, г..ЧЕЛЯБИНСК</p>
+                </div>
+            </div>
+            <!--menu-->
+            <nav>
+                <div class="wrap_menu clearfix">
+                    <ul>
+                        <li>
+                            <a href="#bl1">О КОМПАНИИ</a>
+                        </li>
+                        <li>
+                            <a href="#bl2">СЕРТИФИКАТЫ</a>
+                        </li>
+                        <li>
+                            <a href="#bl3">КОНТАКТЫ</a>
+                        </li>
+                        <li>
+                            <a></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--end menu-->
+                <div class="wrap_phone-email">
+                    <span>
+                     himprice74@gmail.com
+                    </span>
+                    <span>
+                        +7(932)-01-03-101
+                    </span>
+                </div>
+            </nav>
+        </div>
+        </div>
+    </div>
+    <!--banner width logo and slider-->
+    <div class="wrap_logo">
+        <a id="top"></a>
+        <div class="wrapper">
+            <div class="wrap">
+                <div class="logo">
+                    <img src="image/logo.png">
+                </div>
+                    <div class="owl-carousel">
+                        <div><img src="image/img_logo.png"></div>
+                        <div><img src="image/img_logo.png"></div>
+                        <div><img src="image/img_logo.png"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!--end banner-->
+    <!--btn price and shares-->
+    <div class="wrap_price_and_shares" >
+        <div class="wrapper">
+            <div class="wrap">
+                <div class="price_and_shares clearfix">
+                    <a href="#">АКЦИИ</a>
+                    <a href="#">ПРАЙС</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end btn-->
+</header>
+<main>
+    <!--block shares-->
+    <div class="wrapper">
+        <div class="wrap">
+            <div class="wrapper_catalog">
+                <h3 >АКЦИИ</h3>
+                <div class="wrap_catalog">
+                    <div class="catalog clearfix">
+                        <div class="catalog_item">
+                        </div>
+                        <div class="catalog_item">
+                        </div>
+                        <div class="catalog_item">
+                        </div>
+                        <div class="catalog_item">
+                        </div>
+                        <div class="catalog_item">
+                        </div>
+                        <div class="catalog_item">
+                        </div>
+                        <div class="catalog_item">
+                        </div>
+                        <div class="catalog_item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end shares-->
+            <!--serteficats-->
+            <div class="wrap_serteficats" id="bl2">
+                <h3>СЕРТИФИКАТЫ</h3>
+                <div class="serteficats">
+                    <div class="wrap_blocks">
+                        <div class="blue_block">
+
+                        </div>
+                        <div class="blue_block">
+
+                        </div>
+                        <div class="blue_block">
+
+                        </div>
+                        <div class="blue_block">
+
+                        </div>
+                    </div>
+                    <div class="certeficats_galary">
+                        <div class="owl-carousel">
+                            <div>
+                                <div class="sert">
+                                    <img src="image/serteficats.png">
+                                    <img src="image/serteficats.png">
+                                    <img src="image/serteficats.png">
+                                    <img src="image/serteficats.png">
+
+                                    <img src="image/serteficats.png">
+                                    <img src="image/serteficats.png">
+                                    <img src="image/serteficats.png">
+                                    <img src="image/serteficats.png">
+                                </div>
+                            </div>
+                            <div>content</div>
+                            <div>content</div>
+                            <div>content</div>
+                            <div>content</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--end sert..-->
+            <!--block about company-->
+            <div class="wrap_about_company" id="bl1">
+                <h3>
+                    О КОМПАНИИ :
+                </h3>
+                <p>
+                    КОМПАНИЯ ООО «ХИМ ПРАЙС» ОСУЩЕСТВЛЯЕТ ОПТОВУЮ И РОЗНИЧНУЮ ПРОДАЖУ БЫТОВОЙ ХИМИИ, ХОЗЯЙСТВЕННЫХ ТОВАРОВ И СОПУТСТВУЮЩЕЙ ПРОДУКЦИИ.<br>
+                    МЫ ПРЕДЛАГАЕМ СВОИМ КЛИЕНТАМ ШИРОКИЙ АССОРТИМЕНТ ТОВАРОВ ПО НИЗКИМ ЦЕНАМ, ПОСТОЯННЫЕ АКЦИИ КАЖДУЮ НЕДЕЛЮ И ГИБКУЮ ЦЕНОВУЮ ПОЛИТИКУ ДЛЯ ОПТОВЫХ ПОКУПАТЕЛЕЙ, А ТАК ЖЕ ДОСТАВКУ ПО ЧЕЛЯБИНСКУ И БЛИЖ. ГОРОДАМ, ПОСТАВКИ ПО УРФО  НАПРЯМУЮ ОТ ПРОИЗВОДИТЕЛЕЙ.
+                </p>
+            </div>
+            <!--end about company-->
+
+        </div>
+    </div>
+    <!--block contacts-->
+    <div class="wrap_contacts" id="bl3">
+        <div class="wrapper">
+            <div class="wrap">
+
+                <div class="contacts">
+                    <div class="wrap_data_contacts">
+                        <h6>КОНТАКТЫ </h6>
+                        <div class="time_job clearfix">
+                            <h6>ЧАСЫ РАБОТЫ:</h6>
+                            <p><span>ПН-ПТ: 09-17</span>
+                               <span>СБ: 09-15</span> </p>
+                        </div>
+                        <div class="wrap_email-phon clearfix">
+                            <div class="email-phon_caption">
+                                <h3>E-MAIL: </h3>
+                                <h3>ТЕЛ.: </h3>
+                            </div>
+                            <p>
+                                <span>him.price@yandex.ru</span>
+                                <span>+7-(932)-01-03-101</span>
+                                <span>+7-(351)-909-49-49</span>
+                            </p>
+                        </div>
+                        <div class="adress clearfix">
+                            <h6>АДРЕСА:</h6>
+                            <p>
+                                <span>
+                                    ГЛАВНЫЙ ОФИС- Г. ЧЕЛЯБИНСК, УЛ.<br>
+                                    1-АЯ ПОТРЕБИТЕЛЬСКАЯ 7, <br>
+                                    НА ПРОТИВ ВЪЕЗДА НА <br>
+                                    "ПОТРЕБИТЕЛЬСКИЙ РЫНОК".
+                                </span>
+                                <span>
+                                    РОЗНИЧНЫЙ МАГАЗИН- Г. <br>
+                                    ЧЕЛЯБИНСК, ТРОИЦКИЙ ТРАКТ. 52 А, <br>
+                                    "УРАЛЬСКИЙ ПРИВОЗ", БОКС 53.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="map" style="width: 430px; height: 375px">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</main>
+<div class="fixed_btn">
+    <a href="#top"> <img src="image/btn_top.png"></a>
+
+</div>
+</body>
+</html>
